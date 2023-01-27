@@ -1,27 +1,38 @@
-import Filter from "./filter/Filter";
-import Card from "./card/Card";
+import React, { useState } from "react";
 import { dataList } from "../../dataList";
-import React from "react";
 import "./Main.css";
+import CardContainer from "./cardContainer/CardContainer";
+import SelectedCartContainer from "./selectedCartContainer/SelectedCartContainer";
+
 export default function Main() {
+  const [selectedCard, setSelectedCard] = useState([]);
+
+  const addToCartContainer = (card) => {
+    setSelectedCard((prevList) => {
+      const existCard = prevList.find((item) => item.id === card.id);
+      if (existCard) {
+        return [...prevList];
+      } else {
+        return [...prevList, card];
+      }
+    });
+  };
+
+  const removeFromContainer = (id) => {
+    const newList = selectedCard.filter((item) => item.id !== id);
+    setSelectedCard(newList);
+  };
+
   return (
     <main>
-      <Filter />
-      <div className="card-order">
-        <div className="card-container">
-          {dataList.map((item) => {
-            return (
-              <Card
-                img={item.img}
-                title={item.title}
-                price={item.price}
-                key={item.id}
-              />
-            );
-          })}
-        </div>
-        <div>hello</div>
-      </div>
+      <CardContainer
+        dataList={dataList}
+        onAddToCartContainer={addToCartContainer}
+      />
+      <SelectedCartContainer
+        dataList={selectedCard}
+        onRemoveFromContainer={removeFromContainer}
+      />
     </main>
   );
 }

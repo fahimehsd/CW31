@@ -8,3 +8,7 @@
   align-items: center;
   margin-top: 1rem;
 }
+
+.card-img {
+  max-width: 300px;
+}

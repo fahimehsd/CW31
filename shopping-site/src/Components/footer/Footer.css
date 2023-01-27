@@ -1,8 +1,10 @@
-.header {
+.footer {
   padding: 10px;
   background-color: #203040;
   color: #fff;
+  margin-top: 2rem;
+  text-align: center;
 }
-.header-text {
+.footer-text {
   font-size: 17px;
 }

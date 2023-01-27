@@ -9,49 +9,49 @@ export const dataList = [
   {
     img: dress1,
     title: "happy dress",
-    price: "$ 10.9",
+    price: "11.9",
     desc: "dhfsejkhfsejkhfsejkhfjksjsfehfcjahfj",
     size: "XL",
-    id: 1
+    id: 1,
   },
   {
     img: dress2,
     title: "happy dress",
-    price: "$ 10.9",
+    price: "20.9",
     desc: "dhfsejkhfsejkhfsejkhfjksjsfehfcjahfj",
     size: "L",
-    id: 2
+    id: 2,
   },
   {
     img: dress3,
     title: "happy dress",
-    price: "$ 10.9",
+    price: "10.9",
     desc: "dhfsejkhfsejkhfsejkhfjksjsfehfcjahfj",
     size: "M",
-    id: 3
+    id: 3,
   },
   {
     img: dress4,
     title: "happy dress",
-    price: "$ 10.9",
+    price: "50.9",
     desc: "dhfsejkhfsejkhfsejkhfjksjsfehfcjahfj",
     size: "XL",
-    id: 4
+    id: 4,
   },
   {
     img: dress5,
     title: "happy dress",
-    price: "$ 10.9",
+    price: "10.9",
     desc: "dhfsejkhfsejkhfsejkhfjksjsfehfcjahfj",
     size: "XL",
-    id: 5
+    id: 5,
   },
   {
     img: dress6,
     title: "happy dress",
-    price: "$ 10.9",
+    price: "10.9",
     desc: "dhfsejkhfsejkhfsejkhfjksjsfehfcjahfj",
     size: "XL",
-    id: 6
-  }
+    id: 6,
+  },
 ];

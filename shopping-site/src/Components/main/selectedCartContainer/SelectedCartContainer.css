@@ -1,0 +1,19 @@
+.selected-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.cart {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 18px;
+  border-bottom: 1px solid silver;
+}
+
+.proceed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}

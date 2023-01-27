@@ -1,0 +1,21 @@
+.selected-card {
+  display: flex;
+  gap: 1rem;
+}
+
+.selected-card-img {
+  max-width: 50px;
+}
+
+.selected-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.selected-card-price-remove-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}

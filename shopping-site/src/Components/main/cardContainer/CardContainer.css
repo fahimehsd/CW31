@@ -1,0 +1,14 @@
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: 18px;
+  border-bottom: 1px solid silver;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 1.5rem;
+}

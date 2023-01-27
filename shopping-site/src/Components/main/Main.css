@@ -1,14 +1,12 @@
 main {
   padding: 0 1.25rem;
-}
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  margin-top: 1.5rem;
-}
-.card-order {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 2rem;
 }
+
+@media (max-width: 940px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+} ;
