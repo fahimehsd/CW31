@@ -17,7 +17,7 @@ const SelectedCard = ({ img, title, price, id, onRemoveFromContainer }) => {
             text="remove"
             bgColor="#d3d3d3"
             padding="10px"
-            onRemoveFromContainer={remove}
+            onClick={remove}
           />
         </div>
       </div>

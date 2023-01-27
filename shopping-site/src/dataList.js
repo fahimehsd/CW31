@@ -11,7 +11,7 @@ export const dataList = [
     title: "happy dress",
     price: "11.9",
     desc: "dhfsejkhfsejkhfsejkhfjksjsfehfcjahfj",
-    size: "XL",
+    size: ["xl", "s", "xxl"],
     id: 1,
   },
   {
@@ -19,7 +19,7 @@ export const dataList = [
     title: "happy dress",
     price: "20.9",
     desc: "dhfsejkhfsejkhfsejkhfjksjsfehfcjahfj",
-    size: "L",
+    size: ["xl", "s"],
     id: 2,
   },
   {
@@ -27,7 +27,7 @@ export const dataList = [
     title: "happy dress",
     price: "10.9",
     desc: "dhfsejkhfsejkhfsejkhfjksjsfehfcjahfj",
-    size: "M",
+    size: ["xl", "m"],
     id: 3,
   },
   {
@@ -35,7 +35,7 @@ export const dataList = [
     title: "happy dress",
     price: "50.9",
     desc: "dhfsejkhfsejkhfsejkhfjksjsfehfcjahfj",
-    size: "XL",
+    size: ["xl", "s", "xxl"],
     id: 4,
   },
   {
@@ -43,7 +43,7 @@ export const dataList = [
     title: "happy dress",
     price: "10.9",
     desc: "dhfsejkhfsejkhfsejkhfjksjsfehfcjahfj",
-    size: "XL",
+    size: ["m", "s", "xl"],
     id: 5,
   },
   {
@@ -51,7 +51,7 @@ export const dataList = [
     title: "happy dress",
     price: "10.9",
     desc: "dhfsejkhfsejkhfsejkhfjksjsfehfcjahfj",
-    size: "XL",
+    size: ["l", "x"],
     id: 6,
   },
 ];

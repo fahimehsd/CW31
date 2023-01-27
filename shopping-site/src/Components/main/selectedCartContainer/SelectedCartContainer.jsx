@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Button from "../../button/Button";
+import Form from "./form/Form";
 import SelectedCard from "./selectedCard/SelectedCard";
 import "./SelectedCartContainer.css";
 
@@ -10,6 +11,11 @@ const SelectedCartContainer = ({ dataList, onRemoveFromContainer }) => {
     totalPrice += Math.round(Number(item.price));
     count += 1;
   });
+
+  const [displayForm, setDisplayForm] = useState("none");
+  const ChangeDisplayForm = () => {
+    setDisplayForm("flex");
+  };
 
   return (
     <div>
@@ -32,8 +38,9 @@ const SelectedCartContainer = ({ dataList, onRemoveFromContainer }) => {
       </div>
       <div className="proceed">
         <p>Total: $ {totalPrice}</p>
-        <Button text={"Proceed"} />
+        <Button text={"Proceed"} onClick={ChangeDisplayForm} />
       </div>
+      <Form className="form" displayForm={displayForm} dataList={dataList} />
     </div>
   );
 };

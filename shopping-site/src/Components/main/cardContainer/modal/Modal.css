@@ -1,0 +1,34 @@
+.modal {
+  gap: 2rem;
+  background-color: #fff;
+  border: 1px solid black;
+  padding: 1rem;
+  position: absolute;
+  top: 1rem;
+  width: 90%;
+  left: 5%;
+  z-index: 2;
+}
+
+.modal-img {
+  width: 40%;
+}
+
+.modal-info {
+  width: 60%;
+}
+
+.modal-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-desc {
+  margin: 2rem 0;
+}
+
+.price-button {
+  display: flex;
+  justify-content: space-around;
+}
