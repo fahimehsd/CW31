@@ -5,12 +5,17 @@ import "./SelectedCartContainer.css";
 
 const SelectedCartContainer = ({ dataList, onRemoveFromContainer }) => {
   let totalPrice = 0;
+  let count = 0;
   dataList.forEach((item) => {
     totalPrice += Math.round(Number(item.price));
+    count += 1;
   });
+
   return (
     <div>
-      <p className="cart">Cart is Empty</p>
+      <p className="cart">
+        {!count ? "Cart is Empty" : "You have " + count + " in the Cart"}
+      </p>
       <div className="selected-cards">
         {dataList.map((data) => {
           return (
